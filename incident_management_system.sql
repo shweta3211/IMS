@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: May 10, 2024 at 08:35 AM
+-- Generation Time: May 10, 2024 at 11:22 AM
 -- Server version: 5.7.36
 -- PHP Version: 7.4.26
 
@@ -45,7 +45,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
 --
 
 INSERT INTO `admin` (`id`, `fullname`, `mobilenumber`, `email`, `username`, `password`, `creationDate`, `updationDate`) VALUES
-(1, 'admin', 9953028939, 'shweta31795@gmail.com', 'admin', '0e7517141fb53f21ee439b355b5a1d0a', '2023-09-12 05:16:16', '18-10-2016 04:18:16');
+(1, 'admin', 1234567890, 'test@gmail.com', 'admin', '0e7517141fb53f21ee439b355b5a1d0a', '2023-09-12 05:16:16', '18-10-2016 04:18:16');
 
 -- --------------------------------------------------------
 
@@ -130,8 +130,8 @@ CREATE TABLE IF NOT EXISTS `tblincidents` (
 --
 
 INSERT INTO `tblincidents` (`incident_id`, `complaintNumber`, `userId`, `category`, `complaintPriority`, `reporter_name`, `complaintDetails`, `regDate`, `status`, `lastUpdationDate`) VALUES
-('RMG940322024', 1, 3, '1', 'High', 'Ram', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ', '2023-09-15 12:33:14', 'closed', '2024-05-10 07:43:28'),
-('RMG840322024', 2, 4, '2', 'Low', 'Rakesh Sharma', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n', '2023-09-15 12:41:41', NULL, '2024-05-02 17:01:47'),
+('RMG940322024', 1, 3, '1', 'High', 'Emily Johnson', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ', '2023-09-15 12:33:14', 'closed', '2024-05-10 11:20:06'),
+('RMG840322024', 2, 4, '2', 'Low', 'David Miller', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n', '2023-09-15 12:41:41', NULL, '2024-05-10 11:20:42'),
 ('RMG740322024', 3, 1, '2', 'Low', 'Anuj Kumar', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n', '2023-09-15 12:45:26', 'closed', '2024-05-02 17:02:21'),
 ('RMG640322024', 4, 5, '3', 'Low', 'John Doe', 'Testing', '2023-09-26 01:28:17', NULL, '2024-05-02 17:02:35'),
 ('RMG340322024', 6, 7, '1', 'Medium', 'shweta', 'Testing', '2024-05-02 11:34:43', 'closed', '2024-05-02 17:03:08'),
@@ -171,9 +171,9 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `fullName`, `userEmail`, `password`, `contactNo`, `address`, `State`, `country`, `pincode`, `userImage`, `regDate`, `updationDate`, `status`) VALUES
-(2, 'test', 'test@123', '202cb962ac59075b964b07152d234b70', 7894561236, NULL, NULL, NULL, NULL, NULL, '2023-09-13 05:05:11', NULL, 1),
-(3, 'Ram', 'ram@gmail.com', '202cb962ac59075b964b07152d234b70', 1234567899, NULL, NULL, NULL, NULL, NULL, '2023-09-15 06:33:30', NULL, 1),
-(4, 'Rakesh Sharma', 'rakesh@gmail.com', '202cb962ac59075b964b07152d234b70', 8989898989, 'J-789, Near Metro Station', 'Delhi', 'India', 110110, 'e9a19a656ca1e4758c2025fe1adaeb64.jpg', '2023-09-15 06:43:53', NULL, 1),
+(2, 'test', 'test@123', '202cb962ac59075b964b07152d234b70', 1285000000, NULL, NULL, NULL, NULL, NULL, '2023-09-13 05:05:11', NULL, 1),
+(3, 'Emily Johnson', 'ej@gmail.com', '202cb962ac59075b964b07152d234b70', 1234567899, NULL, NULL, NULL, NULL, NULL, '2023-09-15 06:33:30', NULL, 1),
+(4, 'David Miller', 'dm@gmail.com', '202cb962ac59075b964b07152d234b70', 8989898989, 'J-789, Near Metro Station', 'Delhi', 'India', 110110, 'e9a19a656ca1e4758c2025fe1adaeb64.jpg', '2023-09-15 06:43:53', NULL, 1),
 (5, 'John Doe', 'jhndoe12@test.com', 'f925916e2754e5e03f75dd58a5733251', 4141414141, NULL, NULL, NULL, NULL, NULL, '2023-09-26 01:06:49', NULL, 1),
 (9, 'Test', 'test@gmail.com', 'f925916e2754e5e03f75dd58a5733251', 1234567890, NULL, NULL, NULL, NULL, NULL, '2024-05-10 07:53:23', NULL, 1),
 (11, 'abc', 'abc@gmail.com', '900150983cd24fb0d6963f7d28e17f72', 1234567890, NULL, NULL, NULL, NULL, NULL, '2024-05-10 08:16:29', NULL, 1),
